@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Riccardo A. Savorgnan</title>
+  <style>
+    /* Overall page style */
+    body {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      background-color: #fdf6e3; /* pastel background */
+      color: #333333;
+    }
+
+    /* Center the whole site and give it a subtle border */
+    #page {
+      max-width: 960px;
+      margin: 0 auto;
+      min-height: 100vh;
+      border-left: 1px solid #cccccc;
+      border-right: 1px solid #cccccc;
+      background-color: #fffdf8;
+      display: flex;
+    }
+
+    /* Left sidebar */
+    #sidebar {
+      width: 220px;
+      padding: 20px;
+      border-right: 1px solid #dddddd;
+      background-color: #f3ecff; /* pastel lilac */
+      box-sizing: border-box;
+    }
+
+    #sidebar h1 {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 0.4em;
+    }
+
+    #sidebar p {
+      font-size: 14px;
+      margin: 0 0 1em 0;
+    }
+
+    #sidebar ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 1em;
+    }
+
+    #sidebar li {
+      margin-bottom: 0.4em;
+    }
+
+    /* Link colors – very “HTML 4.01” */
+    a:link {
+      color: #003399;   /* blue when not yet visited */
+      text-decoration: none;
+    }
+    a:visited {
+      color: purple;    /* turns purple once clicked */
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:active {
+      color: #cc0000;
+    }
+
+    /* Main content */
+    #content {
+      flex: 1;
+      padding: 20px 30px;
+      box-sizing: border-box;
+    }
+
+    #content h2 {
+      margin-top: 0;
+    }
+
+    /* Make it slightly less bad on narrow screens */
+    @media (max-width: 700px) {
+      #page {
+        flex-direction: column;
+      }
+      #sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dddddd;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="page">
+  <div id="sidebar">
+    <h1>Riccardo A. Savorgnan</h1>
+    <p><em>Ph.D. Student</em><br>
+       Dept. of Civil Engineering<br>
+       New York University</p>
+
+    <ul>
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <!-- <li><a href="#teaching">Teaching</a></li> -->
+      <!-- <li><a href="#contact">Contact</a></li> -->
+    </ul>
+
+    <p style="margin-top: 2em; font-size: 12px;">
+      <a href="https://scholar.google.com/citations?hl=en&user=RchCDrMAAAAJ" target="_blank">Google Scholar</a><br>
+      <a href="https://github.com/riccardosavorgnan" target="_blank">GitHub</a><br>
+      <a href="https://x.com/RiccardoSavor">@RiccardoSavor</a><br>
+      email: r.savorgnan.rs@gmail.com<br>
+    </p>
+
+    <div style="margin-top: 2em; text-align: center;">
+    <img src="images/personal_state/100_hp.gif"
+        alt="PhD Status"
+        style="width: 70%; display: block; margin: 0 auto;">
+    <p style="font-style: italic; font-size: 13px; margin-top: 0.5em; color: #555;">
+        100% HP (year 0)
+    </p>
+    </div>
+
+  </div>
+
+  <div id="content">
+    <h2 id="bio">Bio</h2>
+    <p>
+      I am an incoming Ph.D. student at NYU Tandon - School of Civil Engineering, under the supervision of <a href="https://www.eugenevinitsky.com">Eugene Vinitsky</a>. 
+      Check out the <a href="https://emerge-lab.github.io/">Emerge Lab</a> to discover what we do! <br>
+      In a previous life, I obtained a M.Sc. in Actuarial Statistics, and subsequently worked at Amazon for about 8 years focusing on analytics, deep learning and deep reinforcement learning for supply chain planning in <a href="https://deanfoster.net">Dean Foster</a>'s group.
+      <br><br>
+      Outside of work I vastly enjoy climbing, gaming and go-kart racing. If I had space I'd totally start sim-racing again but I live in <a href="https://millersamuel.com/files/2025/07/Rental-06_2025.pdf?utm_source=chatgpt.com">NYC</a>. 
+    </p>
+
+    <h2 id="research">Research</h2>
+    <p>
+      My research interests are in Multi-Agent Reinforcement Learning (MARL) and how we can design human compatible agents that preserve better capabilities than their human counterparts in non-zero sum games. 
+      I am also always up for a discussion on Lean, formal verification, type systems (programming) and LLMs. 
+    </p>
+
+    <h2 id="publications">Publications</h2>
+    <ul>
+      <li>
+        <strong>Outbound Modeling for Inventory Management</strong><br>
+        <em>Savorgnan et. al.</em>, 2025.
+        [<a href="https://arxiv.org/abs/2507.10890">arXiv</a>]
+      </li>
+      <!-- <li>
+        <strong>Another Paper</strong><br>
+        <em>Authors</em>, Venue, Year.
+      </li> -->
+    </ul>
+
+    <!-- <h2 id="teaching">Teaching</h2>
+    <ul>
+      <li>Course Name (Semester, Year)</li>
+      <li>Course Name (Semester, Year)</li>
+    </ul> -->
+
+    <!-- <h2 id="contact">Contact</h2>
+    <p>
+      Email: <code>r.savorgnan.rs@gmail.com</code><br>
+      
+    </p> -->
+  </div>
+</div>
+
+</body>
+</html>
